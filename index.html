@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <title>Sitema de cadastro de funcionário</title>
+</head>
+<body>
+    <header>
+        <h1>Sitema de cadastro de funcionários</h1>
+    </header>
+    <section>
+        <div class="container">
+            <button type="button" class="button yellow mobile" id="cadastrarCliente">Cadastrar cliente</button>
+                <div class="table">
+                    <table id="tableClient">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Email</th>
+                                <th>Celular</th>
+                                <th>Cidade</th>
+                                <th>Ação</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+        </div>
+        <div class="modal active" id="modal">
+            
+            <div class="modalInfo">
+                <header class="modalHeader">
+                    <p>Cadastrar funcionário</p>
+                    <button class="buttonClose" id="buttonClose">X</button>
+                </header>
+                <form id="modalForm" class="modalInput">
+                    <input type="text" class="modalField" placeholder="Nome do funcionário" data-index="new" id="nomeFunc" required>
+                    <input type="email" class="modalField" placeholder="Email do funcionário" id="emailFunc" required>
+                    <input type="tel" class="modalField" placeholder="+55(00)987654321" id="numberFunc" required>
+                    <input type="text" class="modalField" placeholder="Cidade do funcionário" id="cityFunc" required>
+                </form>
+                <footer class="modalFooter">
+                    <button class="modalButton" id="salvar">Salvar</button>
+                    <button class="modalButtonCan" id="cancelar">Cancelar</button>
+                </footer>
+            </div>
+        </div>
+        <footer id="autoFooter">Desenvolvidor por Raul Henrique</footer>    
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>
